@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1= title
+  h1= 'Found 51?' + find51
+  p Welcome to Users page
+  h1 All Users
+  for user in users
+      div.name
+          h6= user.name
+  h1 Shrinked Users
+  for user in shrinkedUsers
+      div.name
+          h6= user.name
+  h1 Stacked Users
+  for user in stackedUsers
+      div.name
+          h6= user.name
+  h1 Stacked Shrinked Users
+  for user in stackedUsersShrinked
+      div.name
+          h6= user.name
+    h1 Sorted array:
+    //p= 'bubbleSortRecursive= ' + bubbleSortRecursive
+    //p= 'bubbleSort= ' + bubbleSort
+    p= 'mergeSort= ' + mergeSort
+    //p= 'selectionSort= ' + selectionSort
+    p= 'quickSort= ' + quickSort
+    span='['
+        //for num in arr
+        //    span= num + ', '
+        span=']'
